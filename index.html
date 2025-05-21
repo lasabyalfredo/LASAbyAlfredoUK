@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LASA by Alfredo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+  <style>
+    :root {
+      --primary: #2f7038;
+      --secondary: #f47c25;
+      --background: #fffaf2;
+      --accent: #c2923f;
+    }
+
+    body {
+      background-color: var(--background);
+    }
+
+    nav strong, h2, h3, footer a {
+      color: var(--primary);
+    }
+
+    a,
+    a[role="button"],
+    button,
+    input[type="submit"] {
+      background-color: var(--secondary) !important;
+      color: white !important;
+      border: none;
+    }
+
+    figure img {
+      border-radius: 0.5rem;
+      border: 4px solid var(--accent);
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      border: 1px solid var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <nav class="container-fluid">
+    <ul>
+      <li><strong>LASA by Alfredo</strong></li>
+    </ul>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#subscribe" role="button">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <div class="grid">
+      <section>
+        <hgroup>
+          <h2>Bold Flavor, Small Batch</h2>
+          <h3>Handcrafted Filipino Hot Sauce</h3>
+        </hgroup>
+        <p>LASA by Alfredo brings you a taste of tradition, using local ingredients and a passion for heat. Made in small batches for bold flavor in every drop.</p>
+        <figure>
+          <img src="https://chat.openai.com/cdn-cgi/imagedelivery/n3jBhJ7Ym6Fzq5gZq4ApQA/1ac8de91-53ee-4b89-2bb7-3930a2cc4c00/public" alt="LASA by Alfredo hot sauce bottle" />
+          <figcaption><a href="#products">Explore Our Sauces</a></figcaption>
+        </figure>
+        <h3 id="products">Our Signature Sauce</h3>
+        <p>APOY is our signature sauce, with a deep orange hue, spicy kick, and a savory balance of garlic and habanero. Perfect on everything from eggs to barbecue.</p>
+        <h3 id="about">Meet Alfredo</h3>
+        <p>Chef Alfredo draws inspiration from Filipino cuisine, family meals, and a love for spice. Each bottle of LASA is a reflection of his culinary journey.</p>
+      </section>
+    </div>
+  </main>
+
+  <section id="subscribe" aria-label="Subscribe example">
+    <div class="container">
+      <article>
+        <hgroup>
+          <h2>Stay in the Loop</h2>
+          <h3>Sign up for spicy updates & special batches</h3>
+        </hgroup>
+        <form class="grid">
+          <input type="text" id="firstname" name="firstname" placeholder="Your first name" aria-label="First name" required />
+          <input type="email" id="email" name="email" placeholder="Your email" aria-label="Email address" required />
+          <button type="submit" onclick="event.preventDefault()">Subscribe</button>
+        </form>
+      </article>
+    </div>
+  </section>
+
+  <footer class="container">
+    <small>
+      <a href="#">Instagram</a> • <a href="#">Contact</a>
+    </small>
+  </footer>
+</body>
+</html>
